@@ -1,6 +1,7 @@
 package Menu;
 
 import Tech.HouseRobber;
+import Tech.SumOf3;
 
 import java.util.Scanner;
 
@@ -10,7 +11,7 @@ public class MainMenu {
     public void printAllOptions() {
         System.out.println("0: Quit");
         System.out.println("1: House robber demo");
-        System.out.println("2: That");
+        System.out.println("2: Sum of three");
         System.out.println("1: Booh");
     }
 
@@ -28,6 +29,9 @@ public class MainMenu {
                 case "1":
                     houseRobber();
                     break;
+                case "2":
+                    sumOf3();
+                    break;
                 default:
                     System.out.println("Invalid choice, please enter a valid number");
                     break;
@@ -40,5 +44,9 @@ public class MainMenu {
         robber.rob();
     }
 
+    private void sumOf3() {
+        SumOf3 sumOf3 = new SumOf3();
+        sumOf3.sum();
+    }
 
 }
