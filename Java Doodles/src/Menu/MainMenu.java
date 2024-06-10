@@ -1,8 +1,10 @@
 package Menu;
 
 import Tech.HouseRobber;
+import Tech.PlusOne;
 import Tech.PowerOfTwo;
 import Tech.SumOf3;
+import com.sun.source.tree.NewArrayTree;
 
 import java.util.Scanner;
 
@@ -14,7 +16,8 @@ public class MainMenu {
         System.out.println("1: House robber demo");
         System.out.println("2: Sum of three");
         System.out.println("3: Power of two");
-        System.out.println("4: PJolly Jumper");
+        System.out.println("4: Jolly Jumper");
+        System.out.println("5: Plus One");
     }
 
     public void menuOps(){
@@ -40,6 +43,9 @@ public class MainMenu {
                 case "4":
                     jollyJumper();
                     break;
+                case "5":
+                    plusOne();
+                    break;
                 default:
                     System.out.println("Invalid choice, please enter a valid number");
                     break;
@@ -63,6 +69,12 @@ public class MainMenu {
     }
 
     private void jollyJumper(){
+
+    }
+
+    private void plusOne(){
+        PlusOne plus = new PlusOne();
+        plus.plusOneSolution();
 
     }
 
