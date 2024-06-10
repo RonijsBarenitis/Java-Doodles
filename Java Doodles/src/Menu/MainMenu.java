@@ -14,6 +14,7 @@ public class MainMenu {
         System.out.println("1: House robber demo");
         System.out.println("2: Sum of three");
         System.out.println("3: Power of two");
+        System.out.println("4: PJolly Jumper");
     }
 
     public void menuOps(){
@@ -36,6 +37,9 @@ public class MainMenu {
                 case "3":
                     powerOfTwo();
                     break;
+                case "4":
+                    jollyJumper();
+                    break;
                 default:
                     System.out.println("Invalid choice, please enter a valid number");
                     break;
@@ -56,6 +60,10 @@ public class MainMenu {
     private void powerOfTwo() {
         PowerOfTwo power = new PowerOfTwo();
         power.powerOfTwo();
+    }
+
+    private void jollyJumper(){
+
     }
 
 }
